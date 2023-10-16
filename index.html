@@ -5,74 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Animitia Assignments</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            body{
-                border: 1px solid #000;
-                height: 650px;
-                padding: 10px;
-            }
-            .box{
-                width: 280px;
-                height: 210px;
-                background-image: url("img/photo-1.jpg");
-                background-size: cover;
-                box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-                position: relative;
-                overflow: hidden;
-            }
-            .overlay{
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0.5);
-                position: absolute;
-                top: -210px;
-                left: 0px;
-                transition-property: all;
-                transition-duration: .4s;
-                transition-timing-function: ease-in-out;
-            }
-            
-            /*
-            descendent selector <SPACE>
-            p c{
-
-            }
-            */
-            .box:hover .overlay{
-                top: 0px;
-            }
-            /*
-            Direct CHild selector >
-            p > c{
-
-            }
-            */
-            .overlay > a{
-                display: inline-block;
-                height: 50px;
-                width: 50px;
-                border-radius: 50px;
-                background: #fff;
-                text-align: center;
-                line-height: 50px;
-                position: absolute;
-                top: 85px;
-                left: 80px;
-            }
-            .banchor{
-                left: 140px !important;
-            }
-            .a1{
-                display: block;
-                width:120px;
-                height: 25px;
-                padding: 5px;
-                margin-top: 20px;
-                background: grey;
-                box-shadow: 5px 5px 5px 1px rgba(48, 48, 48, 0.5);
-                text-decoration: none;
-            }
-        </style>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div class="common box">
@@ -85,7 +18,15 @@
                 </a>
             </div>
         </div>
-
-        <a class="a1" href="./index2.html">Welcome to Page2</a>
+        <div class="common box">
+            <div class="overlay overlay5">
+                <a href="#" class="a5_1">
+                    <i class="fa-solid fa-link" style="color: #464646;"></i>
+                </a>
+                <a class="banchor a5_2" href="#">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #464646;"></i>
+                </a>
+            </div>
+        </div>
     </body>
 </html>

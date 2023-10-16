@@ -1,0 +1,90 @@
+.common{
+    width: 280px;
+    height: 210px;
+
+}
+.box{
+    background-image: url("../img/photo-1.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 12px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: -210px;
+    left: 0px;
+    transition-property: all;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+}
+.overlay5{
+    top: 0px;
+    opacity: 0;
+    transition-duration: .2s;
+}
+.box:hover > .overlay5{
+    opacity: 1;
+}
+
+/*
+descendent selector <SPACE>
+p c{
+
+}
+*/
+.box:hover .overlay{
+    top: 0px;
+}
+/*
+Direct CHild selector >
+p > c{
+
+}
+*/
+.overlay > a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 85px;
+    left: 80px;
+}
+.banchor{
+    left: 140px !important;
+}
+.a1{
+    display: block;
+    width:120px;
+    height: 25px;
+    padding: 5px;
+    margin-top: 20px;
+    background: grey;
+    box-shadow: 5px 5px 5px 1px rgba(48, 48, 48, 0.5);
+    text-decoration: none;
+}
+.a5_1{
+    left: 50px !important;
+}
+.a5_2{
+    left: 180px !important;
+}
+.a5_1, .a5_2{
+    /*transition: property duration timing-function delay|initial|inherit; */
+    transition: all .1s linear;
+}
+.box:hover > .overlay5 .a5_1{
+    left: 85px !important;
+}
+.box:hover > .overlay5 .a5_2{
+    left: 145px !important;
+}
