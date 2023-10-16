@@ -80,11 +80,33 @@ p > c{
 }
 .a5_1, .a5_2{
     /*transition: property duration timing-function delay|initial|inherit; */
-    transition: all .1s linear;
+    transition: all 0.1s linear;
 }
 .box:hover > .overlay5 .a5_1{
     left: 85px !important;
 }
 .box:hover > .overlay5 .a5_2{
     left: 145px !important;
+}
+.a7_1, .a7_2{
+    transform: scale(1.5,1.5);
+    transition: all .1s linear;
+}
+.box:hover .a7_1, .box:hover .a7_2{
+    transform: scale(1,1);
+}
+.a9_2{
+    transform: scale(0,0);
+    transition: all .1s linear;
+}
+.box:hover .a9_2{
+    transform: scale(1,1);
+}
+.a9_1{
+    transform-origin: 75px center;
+    transform: rotateZ(-25deg) scale(0,0);
+}
+.box:hover .a9_1{
+    transform: rotateZ(360deg) scale(1,1);
+    transition: all 1s linear;
 }
